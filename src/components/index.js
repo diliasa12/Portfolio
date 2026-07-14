@@ -1,4 +1,3 @@
-import Navbar from "#components/Navbar";
-import Welcome from "#components/Welcome";
-import Dock from "#components/Dock";
-export { Navbar, Welcome, Dock };
+import ActionButton from "#components/ActionButton";
+import Clock from "#components/Clock";
+export { ActionButton, Clock };

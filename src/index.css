@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
+
 html,
 body {
   width: 100dvw;
@@ -59,7 +60,7 @@ body {
   }
 }
 
-@layer components {
+@layer layouts {
   .icon {
     @apply p-1 hover:bg-gray-200 rounded hover:cursor-default;
   }
@@ -391,4 +392,199 @@ body {
       }
     }
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Login Screen ─────────────────────────────────────────── */
+.login-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("/images/walpaper.jpg");
+}
+
+.login-blob-1 {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 50% 40% at 70% 15%,
+    rgba(220, 110, 40, 0.55) 0%,
+    transparent 70%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.login-blob-2 {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 35% 30% at 30% 70%,
+    rgba(80, 10, 50, 0.6) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.login-clock-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.login-clock {
+  text-align: center;
+  color: #fff;
+  user-select: none;
+  margin-bottom: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+.login-clock-time {
+  font-size: 72px;
+  font-weight: 200;
+  letter-spacing: -2px;
+  line-height: 1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.login-clock-ampm {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.login-clock-date {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 6px;
+  opacity: 0.9;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+}
+
+.login-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2.5px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.55),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  transition: transform 0.15s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.login-avatar:hover {
+  transform: scale(1.04);
+}
+
+.login-avatar--pressed {
+  transform: scale(0.96);
+}
+
+.login-name {
+  margin-top: 18px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+  user-select: none;
+}
+
+.login-hint {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+
+.login-actions {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.login-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: background 0.15s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    .login-action-icon {
+      background: rgba(255, 255, 255, 0.28);
+    }
+  }
+}
+
+.login-action-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.login-action-label {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 11px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }

@@ -8,6 +8,10 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
+      "#layouts": resolve(
+        dirname(fileURLToPath(import.meta.url)),
+        "src/layouts",
+      ),
       "#components": resolve(
         dirname(fileURLToPath(import.meta.url)),
         "src/components",
