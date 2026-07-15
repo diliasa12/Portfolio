@@ -44,7 +44,7 @@ const dockApps = [
   },
   {
     id: "safari",
-    name: "Articles", // was "Safari"
+    name: "Experiences", // was "Safari"
     icon: "safari.png",
     canOpen: true,
   },
@@ -74,35 +74,37 @@ const dockApps = [
   },
 ];
 
-const blogPosts = [
+const experiences = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-  },
-  {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-  },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    date: "August 19, 2024 - Present",
+    image: "/images/LOGO_UPNVJ.png",
+    contribution: [
+      {
+        description:
+          "Maintain and Develop Digntion Web App from VeteranTech (LMS)",
+        link: "https://dignition.veterantech.id/",
+      },
+      {
+        description: "Semi-Finalist IBCC Ganesha 2026",
+        link: "https://www.linkedin.com/posts/muhammad-assya-dili_businesscase-sbmitb-ganeshabusinessfestival-ugcPost-7479523062774657024-KUXv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFCIxskBgBmvwb5XiONaXYgzETV6Qpo6kd8",
+      },
+      {
+        description: "GPA: 3.94",
+        link: "https://drive.google.com/file/d/1M56g8MrZ6X6ePxognAMhVr8gf1xZCrVY/view?usp=sharing",
+      },
+    ],
   },
 ];
 
 const techStack = [
   {
     category: "Frontend",
-    items: ["TypeScript", "React.js", "Next.js"],
+    items: ["React.js", "TypeScript"],
+  },
+  {
+    category: "Styling",
+    items: ["Tailwind CSS", "CSS"],
   },
   {
     category: "Backend",
@@ -117,10 +119,6 @@ const techStack = [
     items: ["MongoDB", "PostgreSQL"],
   },
   {
-    category: "Styling",
-    items: ["Tailwind CSS", "CSS"],
-  },
-  {
     category: "Dev Tools",
     items: ["Git", "GitHub", "Linear"],
   },
@@ -132,7 +130,7 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/diliasa12",
+    link: "https://github.com/JavaScript-Mastery-Pro",
   },
   {
     id: 2,
@@ -208,7 +206,7 @@ export {
   navLinks,
   navIcons,
   dockApps,
-  blogPosts,
+  experiences,
   techStack,
   socials,
   photosLinks,
