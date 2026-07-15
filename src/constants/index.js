@@ -102,27 +102,27 @@ const blogPosts = [
 const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["TypeScript", "React.js", "Next.js"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express", "Hono", "Laravel"],
+  },
+  {
+    category: "CI/CD Tools",
+    items: ["Docker", "Kubernetes", "GitHub Actions"],
   },
   {
     category: "Database",
     items: ["MongoDB", "PostgreSQL"],
   },
   {
+    category: "Styling",
+    items: ["Tailwind CSS", "CSS"],
+  },
+  {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub", "Linear"],
   },
 ];
 
@@ -132,7 +132,7 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/diliasa12",
   },
   {
     id: 2,
