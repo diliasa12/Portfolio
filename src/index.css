@@ -139,14 +139,20 @@ body {
         @apply grid grid-cols-12 space-x-5;
 
         img {
-          @apply size-full rounded-md object-cover;
+          @apply w-full rounded-md object-cover;
         }
 
         .content {
           @apply col-span-10 space-y-3;
 
           p {
-            @apply text-xs text-gray-500;
+            @apply text-xs  text-gray-500;
+          }
+          li {
+            @apply text-sm  p-5;
+            .check {
+              @apply text-[#00A154];
+            }
           }
 
           h3 {
