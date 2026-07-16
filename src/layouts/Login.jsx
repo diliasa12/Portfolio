@@ -34,7 +34,7 @@ export default function Login({ onLogin }) {
           <img src={profilePhoto} alt="Dili" />
         </button>
         <div className="login-name">Dili</div>
-        <div className="login-hint">Click to unlock</div>
+        <div className="login-hint">Click Profile to unlock</div>
       </div>
 
       <div className="login-actions">
